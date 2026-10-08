@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - News Aggregator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-page">
+
+    <!-- HEADER -->
+    <header class="admin-header">
+
+        <div class="admin-logo">
+
+            <span>📰</span>
+
+            <div>
+                <h2>NEWS AGGREGATOR</h2>
+                <small>Admin Dashboard</small>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="admin.html" class="active">
+                Dashboard
+            </a>
+
+            <button
+                type="button"
+                onclick="logout()"
+                class="admin-logout">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+
+        <!-- TITLE -->
+        <div class="admin-title">
+
+            <span>ADMIN PANEL</span>
+
+            <h1>
+                Welcome, Admin 👋
+            </h1>
+
+            <p>
+                Monitor and manage your News Aggregator.
+            </p>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+        <section class="admin-stats">
+
+
+            <!-- TOTAL NEWS -->
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    📰
+                </div>
+
+                <div>
+                    <h3 id="totalNews">
+                        0
+                    </h3>
+
+                    <p>
+                        Total News
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    📂
+                </div>
+
+                <div>
+                    <h3>
+                        4
+                    </h3>
+
+                    <p>
+                        Categories
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- REGISTERED USERS -->
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+                <div>
+                    <h3 id="totalUsers">
+                        0
+                    </h3>
+
+                    <p>
+                        Registered Users
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CURRENT YEAR -->
+            <div class="admin-stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+                    <h3>
+                        2026
+                    </h3>
+
+                    <p>
+                        Current Year
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD CARDS -->
+        <section class="admin-dashboard-grid">
+
+
+            <!-- NEWS MANAGEMENT -->
+            <div class="admin-panel-card">
+
+                <div class="panel-icon">
+                    📰
+                </div>
+
+                <h2>
+                    News Management
+                </h2>
+
+                <p>
+                    View and manage all the news articles
+                    available in the News Aggregator.
+                </p>
+
+                <button
+                    type="button"
+                    class="panel-btn"
+                    onclick="showAdminNews()">
+                    View News
+                </button>
+
+            </div>
+
+
+            <!-- NEWS OVERVIEW -->
+            <div class="admin-panel-card">
+
+                <div class="panel-icon">
+                    📊
+                </div>
+
+                <h2>
+                    News Overview
+                </h2>
+
+                <p>
+                    Check the latest news and categories
+                    currently available on the platform.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="panel-btn">
+                    View Homepage
+                </a>
+
+            </div>
+
+
+            <!-- ADMIN PROFILE -->
+            <div class="admin-panel-card">
+
+                <div class="panel-icon">
+                    👤
+                </div>
+
+                <h2>
+                    Admin Profile
+                </h2>
+
+                <p>
+                    You are currently logged in as the
+                    administrator of News Aggregator.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="panel-btn">
+                    Go to Home
+                </a>
+
+            </div>
+
+
+            <!-- ACCOUNT / LOGOUT -->
+            <div class="admin-panel-card">
+
+                <div class="panel-icon">
+                    🔐
+                </div>
+
+                <h2>
+                    Account
+                </h2>
+
+                <p>
+                    Securely logout from the administrator
+                    dashboard.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="logout()"
+                    class="panel-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT NEWS -->
+        <section class="admin-news-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>
+                        NEWS
+                    </span>
+
+                    <h2>
+                        Recent News
+                    </h2>
+
+                </div>
+
+                <p>
+                    Latest articles available in the system.
+                </p>
+
+            </div>
+
+
+            <div
+                id="adminNewsList"
+                class="admin-news-grid">
+
+                <!-- News cards will appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="modern-footer">
+
+        <div class="footer-logo">
+            📰 NEWS AGGREGATOR
+        </div>
+
+        <p>
+            Your trusted place for the latest news and updates.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 News Aggregator. All Rights Reserved.
+        </small>
+    
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

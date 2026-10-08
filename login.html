@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - News Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <!-- Header -->
+    <header class="modern-header">
+
+        <div class="modern-logo">
+            <span>📰</span>
+            <div>
+                <h2>NEWS AGGREGATOR</h2>
+                <small>Stay Updated. Stay Informed.</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#latest">Latest</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="login.html" class="active modern-login">Login</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Login Section -->
+    <main class="login-main">
+
+        <div class="login-card">
+
+            <!-- Left Side -->
+            <div class="login-form-area">
+
+                <span class="login-small-title">WELCOME BACK</span>
+
+                <h1>Welcome Back!</h1>
+
+                <p class="login-description">
+                    Login to continue to your News Aggregator account.
+                </p>
+
+                <form id="loginForm" onsubmit="loginUser(event)">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <div class="login-options">
+                        <label class="remember">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="create-account">
+                    Don't have an account?
+                    <a href="signup.html">Create Account</a>
+                </p>
+
+                <a href="index.html" class="back-home">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+
+            <!-- Right Side -->
+            <div class="login-image-area">
+
+                <div class="news-illustration">
+
+                    <div class="news-circle">
+                        📰
+                    </div>
+
+                    <h2>Stay Informed</h2>
+
+                    <p>
+                        Get the latest news and important updates
+                        all in one place.
+                    </p>
+
+                    <div class="login-features">
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <div>
+                                <b>Latest News</b>
+                                <small>Fresh updates every day</small>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <div>
+                                <b>Multiple Categories</b>
+                                <small>Technology, Sports & more</small>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <span>✓</span>
+                            <div>
+                                <b>Easy Access</b>
+                                <small>Everything in one place</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="modern-footer">
+
+        <div class="footer-logo">
+            📰 NEWS AGGREGATOR
+        </div>
+
+        <p>
+            Your trusted place for the latest news and updates.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 News Aggregator. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

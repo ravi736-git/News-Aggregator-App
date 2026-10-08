@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News Aggregator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="modern-header">
+
+    <div class="modern-logo">
+
+        <span>📰</span>
+
+        <div>
+            <h2>NEWS AGGREGATOR</h2>
+            <small>Stay Updated. Stay Informed.</small>
+        </div>
+
+    </div>
+
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search latest news..."
+            onkeyup="searchNews()"
+        >
+
+        <button>🔍</button>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html" class="active">
+            Home
+        </a>
+
+        <a href="#latest">
+            Latest
+        </a>
+
+        <a href="#categories">
+            Categories
+        </a>
+
+        <!-- ADMIN FIRST -->
+
+        <a href="admin.html" class="admin-btn">
+            Admin
+        </a>
+
+        <!-- LOGIN SECOND -->
+
+        <a href="login.html" class="modern-login">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="modern-hero">
+
+    <div class="hero-left">
+
+        <span class="breaking">
+            🔴 BREAKING NEWS
+        </span>
+
+
+        <h1>
+            Stay Updated With
+            <span>Latest News Worldwide.</span>
+        </h1>
+
+
+        <p>
+            Discover the latest stories, updates and trending
+            news from around the world.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#latest" class="primary-btn">
+                Explore News →
+            </a>
+
+            <a href="#categories" class="secondary-btn">
+                Browse Categories
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-right">
+
+        <div class="featured-image">
+
+            <div class="globe">
+                🌐
+            </div>
+
+        </div>
+
+
+        <div class="featured-info">
+
+            <span>
+                FEATURED STORY
+            </span>
+
+            <h3>
+                Latest News & Updates
+            </h3>
+
+            <p>
+                Stay informed with today's important stories.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRENDING ================= -->
+
+<section class="trending">
+
+    <div class="section-top">
+
+        <div>
+
+            <span>
+                🔥 WHAT'S HOT
+            </span>
+
+            <h2>
+                Trending Today
+            </h2>
+
+        </div>
+
+
+        <a href="#latest">
+            View All →
+        </a>
+
+    </div>
+
+
+    <div class="trend-grid">
+
+
+        <!-- TREND 1 -->
+
+        <div class="trend-card">
+
+            <div class="trend-image tech-image">
+                💻
+            </div>
+
+            <span>
+                01
+            </span>
+
+            <div>
+
+                <b>
+                    Technology
+                </b>
+
+                <h3>
+                    New Technology Trends in 2026
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- TREND 2 -->
+
+        <div class="trend-card">
+
+            <div class="trend-image sports-image">
+                ⚽
+            </div>
+
+            <span>
+                02
+            </span>
+
+            <div>
+
+                <b>
+                    Sports
+                </b>
+
+                <h3>
+                    Latest Sports Updates
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- TREND 3 -->
+
+        <div class="trend-card">
+
+            <div class="trend-image education-image">
+                🎓
+            </div>
+
+            <span>
+                03
+            </span>
+
+            <div>
+
+                <b>
+                    Education
+                </b>
+
+                <h3>
+                    New Education Opportunities
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LATEST NEWS ================= -->
+
+<section
+    class="modern-latest"
+    id="latest"
+>
+
+    <div class="section-top">
+
+        <div>
+
+            <span>
+                ▣ STAY INFORMED
+            </span>
+
+            <h2>
+                Latest News
+            </h2>
+
+        </div>
+
+
+        <p>
+            Fresh updates for you
+        </p>
+
+    </div>
+
+
+    <!-- NEWS WILL BE DISPLAYED BY JAVASCRIPT -->
+
+    <div
+        id="newsContainer"
+        class="modern-news-grid"
+    >
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section
+    class="modern-categories"
+    id="categories"
+>
+
+    <div class="section-center">
+
+        <span>
+            ▣ EXPLORE
+        </span>
+
+        <h2>
+            Browse Categories
+        </h2>
+
+        <p>
+            Find stories that interest you.
+        </p>
+
+    </div>
+
+
+    <div class="modern-category-grid">
+
+
+        <!-- TECHNOLOGY -->
+
+        <a
+            href="#latest"
+            class="modern-category"
+        >
+
+            <div class="category-icon tech-icon">
+                💻
+            </div>
+
+            <h3>
+                Technology
+            </h3>
+
+            <p>
+                Innovation & Tech
+            </p>
+
+        </a>
+
+
+        <!-- SPORTS -->
+
+        <a
+            href="#latest"
+            class="modern-category"
+        >
+
+            <div class="category-icon sports-icon">
+                ⚽
+            </div>
+
+            <h3>
+                Sports
+            </h3>
+
+            <p>
+                Games & Updates
+            </p>
+
+        </a>
+
+
+        <!-- EDUCATION -->
+
+        <a
+            href="#latest"
+            class="modern-category"
+        >
+
+            <div class="category-icon education-icon">
+                🎓
+            </div>
+
+            <h3>
+                Education
+            </h3>
+
+            <p>
+                Learning & Careers
+            </p>
+
+        </a>
+
+
+        <!-- ENTERTAINMENT -->
+
+        <a
+            href="#latest"
+            class="modern-category"
+        >
+
+            <div class="category-icon entertainment-icon">
+                🎬
+            </div>
+
+            <h3>
+                Entertainment
+            </h3>
+
+            <p>
+                Movies & Shows
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="modern-footer">
+
+    <div class="footer-logo">
+        📰 NEWS AGGREGATOR
+    </div>
+
+
+    <p>
+        Your trusted place for the latest news and updates.
+    </p>
+
+
+    <div class="footer-line"></div>
+
+
+    <small>
+        © 2026 News Aggregator. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
